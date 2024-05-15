@@ -205,7 +205,7 @@ macro_rules! impl_tuple_map {
             where
                  Self::Item: ::std::ops::AddAssign;
 
-            /// Takes `(a, b, c, ...)` then returns `a + b + c ...`
+            /// Takes `(a, b, c, ...)` then returns `a * b * c ...`
             fn product(self) -> Self::Item
             where
                  Self::Item: ::std::ops::MulAssign;
